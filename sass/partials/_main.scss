@@ -1,0 +1,50 @@
+body {
+  background-color: $body_background;
+}
+
+section {
+  width: 95%;
+  margin: auto;
+  article {
+    padding-bottom: 3rem;
+    .subTitleWrapper {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        background-color: $accent_color;
+        padding: 0.5rem;
+        border-radius: 5px;
+        &:hover {
+          background-color: $second_accent_color;
+          color: $title_color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  body {
+    background-color: $body_background750;
+  }
+  section {
+    .articleWrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+      p {
+        color: $global_second_text_color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  section {
+    .articleWrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

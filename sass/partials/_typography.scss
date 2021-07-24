@@ -1,0 +1,41 @@
+* {
+  font-family: $font_text;
+}
+h1 {
+  font-family: $font_title;
+  color: $title_color;
+  font-size: 4rem;
+  padding-left: 1rem;
+}
+h2 {
+  margin: 2rem 0;
+  color: $accent_color;
+  font-size: 2.5rem;
+  text-align: center;
+}
+h3 {
+  margin-top: 1rem;
+  color: $second_accent_color;
+}
+p {
+  margin: 1rem 0;
+  border-bottom: 1px solid $second_accent_color;
+  padding-bottom: 1rem;
+}
+a {
+  font-size: 0.9rem;
+}
+@media screen and (min-width: $tablet) {
+  h1 {
+    font-size: 8rem;
+    text-align: center;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: $desktop) {
+  h1 {
+    font-size: 10rem;
+  }
+}

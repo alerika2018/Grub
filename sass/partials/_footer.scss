@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: $header_background_color;
+  .buttons {
+    display: flex;
+    i {
+      color: $second_accent_color;
+      font-size: 2rem;
+      margin: 0 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  footer {
+    background-color: darken($accent_color, 20%);
+    .buttons {
+      i {
+        color: $header_background_color;
+        font-size: 3rem;
+      }
+    }
+  }
+}
